@@ -1,16 +1,15 @@
 import "dart:io";
 
 void main() {
-  int number = 1;
   int rows = int.parse(stdin.readLineSync()!);
+  int number = 1;
   for (int i = 1; i <= rows; i++) {
     for (int j = 1; j <= rows; j++) {
-      if (number % 2 == 1) {
-        stdout.write("1 ");
-      } else
-         {
-          stdout.write("0 ");
-        };
+      if (i % 2 == 1) {
+        stdout.write("$number");
+      } else {
+        stdout.write("a");
+      }
     }
     print("");
     number++;
